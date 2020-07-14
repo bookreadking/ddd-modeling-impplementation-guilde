@@ -20,6 +20,11 @@
 - 第10章 アーキテクチャ全般・ライブラリなど 10P 第7回
 - 第11章 困った時には 2P 第7回
 
-# 履歴
+# 読書会メモ
 1. [2020/07/06 はじめに〜第1章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/1)
 1. [2020/07/13 第2章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/2)
+1. [2020/07/20 第3章、第４章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/3)
+1. [2020/07/27 第５章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/4)
+1. [2020/08/03 第6章、第7章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/5)
+1. [2020/08/17 第8章、第9章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/6)
+1. [2020/08/24 第10章、第11章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/7)
