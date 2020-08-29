@@ -1,0 +1,13 @@
+@startuml
+
+actor :チケット窓口: as seller
+note right of seller: "口頭で確認した内容をシステムに登録して\nチケットを発券する"
+
+actor :チケット購入者: as user
+note right of user: 割引を受けるため身分証などを窓口に見せる\n同じタイトル・上映時間のチケットは複数枚まとめて購入できる
+
+usecase (チケット発券) as issue
+
+seller --> issue : 発券する
+user --> seller : 発券を依頼する
+@enduml
