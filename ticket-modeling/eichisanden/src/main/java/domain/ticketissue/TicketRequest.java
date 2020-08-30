@@ -1,6 +1,7 @@
 package domain.ticketissue;
 
 import domain.member.MemberNo;
+import domain.price.TicketPriceType;
 import exception.EmptyValueException;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -19,22 +20,22 @@ public class TicketRequest {
     private final int requestSeq;
     // 会員番号
     private MemberNo memberNo;
-    // 申込種別
-    private TicketRequestType ticketRequestType;
+    // チケットタイプ
+    private TicketPriceType ticketPriceType;
     // 3Dメガネあり
     private boolean has3DGlasses = false;
 
     // チケット
     private Ticket ticket;
 
-    public TicketRequest(int requestSeq, MemberNo memberNo, TicketRequestType ticketRequestType) {
-        this(requestSeq, memberNo, ticketRequestType, false);
+    public TicketRequest(int requestSeq, MemberNo memberNo, TicketPriceType ticketPriceType) {
+        this(requestSeq, memberNo, ticketPriceType, false);
     }
 
-    public TicketRequest(int requestSeq, MemberNo memberNo, TicketRequestType ticketRequestType, boolean has3DGlasses) {
+    public TicketRequest(int requestSeq, MemberNo memberNo, TicketPriceType ticketPriceType, boolean has3DGlasses) {
         this.requestSeq = requestSeq;
         changeMemberNo(memberNo);
-        changeTicketRequestType(ticketRequestType);
+        changeTicketType(ticketPriceType);
         changeHas3DGlasses(has3DGlasses);
     }
 
@@ -42,15 +43,15 @@ public class TicketRequest {
         this.memberNo = memberNo;
     }
 
-    public void changeTicketRequestType(TicketRequestType ticketRequestType) {
-        this.ticketRequestType = ticketRequestType;
+    public void changeTicketType(TicketPriceType ticketPriceType) {
+        this.ticketPriceType = ticketPriceType;
     }
 
     public void changeHas3DGlasses(boolean has3DGlasses) {
         this.has3DGlasses = has3DGlasses;
     }
 
-    public void issueTicket(TicketType ticketType, int price) throws EmptyValueException {
-        this.ticket = new Ticket(ticketType, new BigDecimal(price));
+    public void issueTicket(int price) throws EmptyValueException {
+        this.ticket = new Ticket(ticketPriceType, new BigDecimal(price));
     }
 }

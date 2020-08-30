@@ -1,5 +1,6 @@
 package domain.ticketissue;
 
+import domain.price.TicketPriceType;
 import exception.EmptyValueException;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -16,22 +17,12 @@ import java.math.BigDecimal;
 public class Ticket {
     // チケットNo
     private final TicketNo ticketNo;
-    // チケット種類
-    private TicketType ticketType;
     // 料金
     private BigDecimal charge;
 
-    public Ticket(TicketType ticketType, BigDecimal charge) throws EmptyValueException {
+    public Ticket(TicketPriceType ticketPriceType, BigDecimal charge) throws EmptyValueException {
         this.ticketNo = new TicketNo();
-        changeTicketType(ticketType);
         changeCharge(charge);
-    }
-
-    public void changeTicketType(TicketType ticketType) throws EmptyValueException {
-        if (ticketType == null) {
-            throw new EmptyValueException("チケットNoは必須です");
-        }
-        this.ticketType = ticketType;
     }
 
     public void changeCharge(BigDecimal charge) throws EmptyValueException {
