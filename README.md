@@ -28,4 +28,4 @@
 1. [2020/08/03 第6章、第7章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/5)
 1. [2020/08/17 第8章、第9章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/6)
 1. [2020/08/24 第10章、第11章](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/7)
-1. [2020/08/31 「番外編」チケット料金モデリング大会](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/8)
+1. [2020/09/07 「番外編」チケット料金モデリング大会](https://github.com/bookreadking/ddd-modeling-impplementation-guilde/issues/8)
